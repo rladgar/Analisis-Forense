@@ -32,7 +32,7 @@ He marcado las tres opciones que se ven en la captura para que verifique la imag
 
 En cuanto al almacenamiento de la imagen, como no dispongo de un disco duro externo, le he indicado que se almacene en la propia máquina aunque no sea lo más recomendable.
 
-Una vez realizada la configuración explicada anteriormente he iniciado la adquisición:
+Una vez realizada la configuración explicada anteriormente, inicio la adquisición:
 
 ![Alt text](<imgUSB/2023-11-01 21_35_35-UIMachineViewNormalClassWindow.png>)
 
