@@ -24,40 +24,40 @@ Información de la memoria USB utilizada:
 
 Para realizar la adquisición forense mediante la herramienta ***FTK Imager*** le he indicado que la imagen sea de tipo **"Raw (dd)":**  
 
-![Alt text](<img/2023-11-01 21_12_00-UIMachineViewNormalClassWindow.png>)
+![Alt text](<imgUSB/2023-11-01 21_12_00-UIMachineViewNormalClassWindow.png>)
 
 He marcado las tres opciones que se ven en la captura para que verifique la imagen una vez creada, me muestre las estadísticas mediante el proceso de creación de la imagen y además cree un directorio con todos los fichero de la imagen:
 
-![Alt text](<img/2023-11-01 21_17_47-UIMachineViewNormalClassWindow.png>)
+![Alt text](<imgUSB/2023-11-01 21_17_47-UIMachineViewNormalClassWindow.png>)
 
 En cuanto al almacenamiento de la imagen, como no dispongo de un disco duro externo, le he indicado que se almacene en la propia máquina aunque no sea lo más recomendable.
 
 Una vez realizada la configuración explicada anteriormente he iniciado la adquisición:
 
-![Alt text](<img/2023-11-01 21_35_35-UIMachineViewNormalClassWindow.png>)
+![Alt text](<imgUSB/2023-11-01 21_35_35-UIMachineViewNormalClassWindow.png>)
 
 Cuando ha finalizado la creación de la imagen, la herramienta empieza a verificar dicha imagen como le he especificado anteriormente:
 
-![Alt text](<img/2023-11-01 21_42_45-UIMachineViewNormalClassWindow.png>)
+![Alt text](<imgUSB/2023-11-01 21_42_45-UIMachineViewNormalClassWindow.png>)
 
 Una vez completado el proceso me muestra el resultado de la verificación de la imagen y como se puede observar en la captura, los hash coinciden y no hay ningún bloque defectuoso:
 
-![Alt text](<img/2023-11-01 21_49_04-UIMachineViewNormalClassWindow.png>)
+![Alt text](<imgUSB/2023-11-01 21_49_04-UIMachineViewNormalClassWindow.png>)
 
 Por último, he decido montar la imagen usando la misma herramienta para comprobar la integridad de la imagen y esta en perfecto estado, además conserva la fecha de creación de los ficheros ya que he realizado una clonación bit a bit:
 
-![Alt text](<img/2023-11-01 22_11_45-UIMachineViewNormalClassWindow.png>)
+![Alt text](<imgUSB/2023-11-01 22_11_45-UIMachineViewNormalClassWindow.png>)
 
 
 ## Guymager
 
 Para realizar la adquisición con la herramienta Guymager, he seleccionado el dispositivo y he pulsado en "adquirir imagen":
 
-![Alt text](img/2.png)
+![Alt text](imgUSB/2.png)
 
 La configuración que he realizado es la siguiente:
 
-![Alt text](img/9.png)
+![Alt text](imgUSB/9.png)
 
 Le he indicado que el formato de la imagen sea **"Exx"**, el tamaño de la división de la imagen lo he dejado por defecto, le he indicado la ruta donde se almacenará la imagen (No es lo recomendable almacenarla en la misma máquina virtual pero no dispongo de disco duro externo) y por último, le he indicado que calcule los *hashes* de los tres algoritmos disponibles y que verifique la fuente y la imagen despues de crearla:
 
@@ -65,39 +65,39 @@ Le he indicado que el formato de la imagen sea **"Exx"**, el tamaño de la divis
 
 Una vez configurado, he iniciado la adquisición:
 
-![Alt text](img/5.png)
+![Alt text](imgUSB/5.png)
 
 La adquisición ha finalizado y como vemos en la captura, la imagen se ha verificado correctamente y no hay ningún bloque defectuoso:
 
-![Alt text](img/6.png)
+![Alt text](imgUSB/6.png)
 
 Por último, para verificar que los hashes coinciden, he abierto el fichero de información que crea al generar la imagen y como se puede observar coinciden:
 
-![Alt text](img/8.png)
+![Alt text](imgUSB/8.png)
 
 
 ## Comando dd
 
 Para realizar la adquisición con el comando ***"dd"*** lo primero que hago es generar un *hash* de la memoria USB para después compararlo con el *hash* de la imagen generada. Para ello utilizo el comando mostrando en la captura y el resultado lo almaceno en un fichero:
 
-![Alt text](img/10.png)
+![Alt text](imgUSB/10.png)
 
 Procedo a crear la imagen con el comando ***dd***. 
 Con la opción ***"conv"*** le indico el parametro ***"noerror"*** para que permita seguir con el proceso de la creación de la imagen aunque de errores y el parámetro ***"sync"*** para que en caso de que un bloque nos de algún error se rellene el resto del bloque con nulos.
 
-![Alt text](img/11.png)
+![Alt text](imgUSB/11.png)
 
 Una vez finalizada la adquisición nos muestra información de los registros leidos y escritos y como podemos ver son los mismos por lo que la imagen parece estar correcta:
 
-![Alt text](img/12.png)
+![Alt text](imgUSB/12.png)
 
 Ahora procedo a crear el *hash* de la imagen generada de la misma forma que cree la del *pendrive*:
 
-![Alt text](img/13.png)
+![Alt text](imgUSB/13.png)
 
 Por último, compruebo el *hash* del *pendrive* y el *hash* de la memoria con la ayuda del comando ***"diff"*** y como se puede observar son exactamente iguales:
 
-![Alt text](img/14.png)
+![Alt text](imgUSB/14.png)
 
 ## Conclusión 
 
