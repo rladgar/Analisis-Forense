@@ -6,6 +6,7 @@
 2. [FTK Imager](#ftk-imager)
 3. [Guymager](#guymager)
 4. [Comando dd](#comando-dd)
+5. [Conclusión](#conclusión)
 
 ## Introducción
 
