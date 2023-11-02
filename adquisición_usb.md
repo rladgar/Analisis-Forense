@@ -2,6 +2,10 @@
 
 ## Índice
 
+1. [Introducción](#introducción)
+2. [FTK Imager](#ftk-imager)
+3. [Guymager](#guymager)
+4. [Comando dd](#comando-dd)
 
 ## Introducción
 
