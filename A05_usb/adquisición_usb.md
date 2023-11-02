@@ -10,7 +10,7 @@
 
 ## Introducción
 
-En esta actividad realizaré un clonado a bajo nivel (bit a bit) de la memoria USB "Sandisk Extreme" con la ayuda de las herramientas FTK Imager, Guymager y dd manteniendo la integridad de los datos. Para ello he utilizado dos máquinas virtuales, una con Windows 10 para utilizar FTK Imager y otra con Ubuntu para utilizar Guymager y el comando dd. Ambas máquinas virtuales se encuentran limpias solo incluyen las herramientas mencionadas.
+En esta actividad realizaré la adquisición de la memoria USB "Sandisk Extreme" con la ayuda de las herramientas FTK Imager, Guymager y dd manteniendo la integridad de los datos. Para ello he utilizado dos máquinas virtuales, una con Windows 10 para utilizar FTK Imager y otra con Ubuntu para utilizar Guymager y el comando dd. Ambas máquinas virtuales se encuentran limpias solo incluyen las herramientas mencionadas.
 
 
 Información de la memoria USB utilizada:
@@ -44,7 +44,7 @@ Una vez completado el proceso me muestra el resultado de la verificación de la 
 
 ![Alt text](<imgUSB/2023-11-01 21_49_04-UIMachineViewNormalClassWindow.png>)
 
-Por último, he decido montar la imagen usando la misma herramienta para comprobar la integridad de la imagen y esta en perfecto estado, además conserva la fecha de creación de los ficheros ya que he realizado una clonación bit a bit:
+Por último, he decido montar la imagen usando la misma herramienta para comprobar la integridad de la imagen y esta en perfecto estado, además conserva la fecha de creación de los ficheros:
 
 ![Alt text](<imgUSB/2023-11-01 22_11_45-UIMachineViewNormalClassWindow.png>)
 
