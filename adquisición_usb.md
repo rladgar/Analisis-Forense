@@ -9,7 +9,7 @@
 
 ## Introducción
 
-En esta actividad realizaré un clonado a bajo nivel (bit a bit) de la memoria USB "Sandisk Extreme" con la ayuda de las herramientas FTK Imager, GuyImager y dd manteniendo la integridad de los datos. Para ello he utilizado dos máquinas virtuales, una con Windows 10 para utilizar FTK Imager y otra con Ubuntu para utilizar GuyImager y el comando dd. Ambas máquinas virtuales se encuentran limpias solo incluyen las herramientas mencionadas.
+En esta actividad realizaré un clonado a bajo nivel (bit a bit) de la memoria USB "Sandisk Extreme" con la ayuda de las herramientas FTK Imager, Guymager y dd manteniendo la integridad de los datos. Para ello he utilizado dos máquinas virtuales, una con Windows 10 para utilizar FTK Imager y otra con Ubuntu para utilizar Guymager y el comando dd. Ambas máquinas virtuales se encuentran limpias solo incluyen las herramientas mencionadas.
 
 
 Información de la memoria USB utilizada:
@@ -48,9 +48,9 @@ Por último, he decido montar la imagen usando la misma herramienta para comprob
 ![Alt text](<img/2023-11-01 22_11_45-UIMachineViewNormalClassWindow.png>)
 
 
-## GuyImager
+## Guymager
 
-Para realizar la adquisición con la herramienta GuyImager, he seleccionado el dispositivo y he pulsado en "adquirir imagen":
+Para realizar la adquisición con la herramienta Guymager, he seleccionado el dispositivo y he pulsado en "adquirir imagen":
 
 ![Alt text](img/2.png)
 
@@ -100,5 +100,5 @@ Por último, compruebo el *hash* del *pendrive* y el *hash* de la memoria con la
 
 ## Conclusión 
 
-Tras probar las herramientas y hacer la adquisición forense con cada una de ellas, he podido apreciar algunas diferencias. En cuanto a la velocidad de adquisición, *FTK Imager* ha sido la más lenta, en cuanto a la comprobación de *hashes* la más tediosa es la herramienta *"dd"* ya que tienes que generar los *hashes* manualmente y compararlos, cosa que las otras dos herramientas lo hacen automáticamente si marcas la opción correspondiente, en cuanto a los formatos disponibles, *FTK Imager* te más opciones para elegir ya que *Guy Imager* solo tiene 2 formatos y *dd* solo 1.
-Las tres herramientas hacen su función perfectamente por lo que mi elección dependerá del caso en concreto para lo que la vaya a usar. Si lo que quiero es solo hacer la adquisición me decantaría por ***GuyImager*** y si además de realizar la adquisición quiero analizar la imagen me decantaría por ***FTK Imager*** ya que es la más completa y tiene muchas más funcionalidades.
+Tras probar las herramientas y hacer la adquisición forense con cada una de ellas, he podido apreciar algunas diferencias. En cuanto a la velocidad de adquisición, *FTK Imager* ha sido la más lenta, en cuanto a la comprobación de *hashes* la más tediosa es la herramienta *"dd"* ya que tienes que generar los *hashes* manualmente y compararlos, cosa que las otras dos herramientas lo hacen automáticamente si marcas la opción correspondiente, en cuanto a los formatos disponibles, *FTK Imager* te más opciones para elegir ya que *Guymager* solo tiene 2 formatos y *dd* solo 1.
+Las tres herramientas hacen su función perfectamente por lo que mi elección dependerá del caso en concreto para lo que la vaya a usar. Si lo que quiero es solo hacer la adquisición me decantaría por ***Guymager*** y si además de realizar la adquisición quiero analizar la imagen me decantaría por ***FTK Imager*** ya que es la más completa y tiene muchas más funcionalidades.
