@@ -20,7 +20,21 @@ Antes de empezar, he desactivado el antivirus de la máquina virtual en la que v
 
 ## Memoria volátil
 
-La primera adquisición que he realizado es la de la memoria *ram* para respetar el orden de volatilidad de las evidencias y mantener la mayor integridad posible de las mismas. 
+La primera adquisición que he realizado es de la información del sistema (hora,fecha, hora de inicio del sistema y procesos) y de la red (interfaces, tablas de enrutamiento y caché). Para ello, utilizando un terminal los capturo directamente a mi disco externo:
+
+- La información del sistema:
+
+![Alt text](img/4.png)
+
+- La información de la red:
+
+![Alt text](img/5.png)
+
+Registros en el disco duro externo:
+
+![Alt text](img/6.png)
+
+Seguidamente he realizado la adquisición de la memoria *ram* para respetar el orden de volatilidad de las evidencias y mantener la mayor integridad posible de las mismas. 
 Procedo a capturar la **memoria ***ram***** con la ayuda de la herramienta ***"DumpIT"*** ejecutándola directamente desde el ejecutable como administrador ya que según el estudio realizado por el usuario @_N4rr34n6_ (https://unminioncurioso.blogspot.com/2020/10/impacto-de-las-herramientas-en-la.html) es la herramienta que menos espacio ocupa en memoria por lo que podré capturar una mayor cantidad de información:
 
 ![Alt text](img/2.png)
@@ -29,24 +43,10 @@ Una vez finalizado el proceso, obtengo la imagen de la memoria *ram*:
 
 ![Alt text](img/3.png)
 
-La segunda adquisición que voy a realizar es la de los registros del sistema y de la red. Para ello, abro un terminal y los capturo directamente a mi disco externo:
 
-- Los registros del sistema:
+Tras adquirir la memoria, procedo a realizar triage con la ayuda de la herramienta ***WINTRIAGE*** para identificar todas las posibles evidencias, obtener informes de los registros, eventos, información de usuarios en el sistema, una segunda adquisición de ram con RawCopy, etc.. :
 
-![Alt text](img/4.png)
-
-- Los registros de red:
-
-![Alt text](img/5.png)
-
-Registros en el disco externo:
-
-![Alt text](img/6.png)
-
-
-Tras adquirir los registros, procedo a realizar triage con la ayuda de la herramienta ***WINTRIAGE*** para identificar todas las posibles evidencias, obtener informes de los registros, eventos, información de usuarios en el sistema, una segunda adquisición de ram con RawCopy, etc.. :
-
-En cuento a los módulos utilizados los he marcado todos menos el de la imagen del disco duro ya que esa adquisición la realizaré después:
+En cuento a los módulos utilizados, los he marcado todos menos el de la imagen del disco duro ya que esa adquisición la realizaré después:
 
 ![Alt text](img/7.png)
 
