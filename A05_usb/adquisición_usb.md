@@ -22,7 +22,7 @@ Información de la memoria USB utilizada:
 
 ## FTK Imager:
 
-Comienzo la adquisición forense utilizando la herramienta ***FTK Imager***. En cuanto a la configuración, he establecido le he indicado que la imagen sea de tipo **"Raw (dd)":**  
+Comienzo la adquisición forense utilizando la herramienta ***FTK Imager***. En cuanto a la configuración que he establecido, le he indicado que la imagen sea de tipo **"Raw (dd)":**  
 
 ![Alt text](<imgUSB/2023-11-01 21_12_00-UIMachineViewNormalClassWindow.png>)
 
