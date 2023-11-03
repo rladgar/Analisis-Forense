@@ -26,7 +26,7 @@ Comienzo la adquisición forense utilizando la herramienta ***FTK Imager***. En 
 
 ![Alt text](<imgUSB/2023-11-01 21_12_00-UIMachineViewNormalClassWindow.png>)
 
-He marcado las tres opciones que se ven en la captura para que verifique la imagen una vez creada, me muestre las estadísticas mediante el proceso de creación de la imagen y además cree un directorio con todos los fichero de la imagen:
+He marcado las tres opciones que se ven en la captura para que verifique la imagen una vez creada, me muestre las estadísticas mediante el proceso de creación de la imagen y además cree un directorio con todos los ficheros de la imagen:
 
 ![Alt text](<imgUSB/2023-11-01 21_17_47-UIMachineViewNormalClassWindow.png>)
 
